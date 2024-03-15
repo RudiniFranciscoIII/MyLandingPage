@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./script.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <br>
+            <span>S</span>
+            <span>O</span>
+            <span>O</span>
+            <span>N</span>
+            <span>!</span>
+            <span>!</span>
+        </h1>
+    </div>
+
+    <script>
+        // Add JavaScript to handle individual text hover effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const spans = document.querySelectorAll('.header span');
+
+            spans.forEach((span, index) => {
+                span.addEventListener('mouseover', function() {
+                    span.style.transform = 'scale(1.2)';
+                    span.style.transition = 'transform 0.3s ease-in-out';
+                });
+
+                span.addEventListener('mouseout', function() {
+                    span.style.transform = 'scale(1)';
+                    span.style.transition = 'transform 0.3s ease-in-out';
+                });
+
+                span.style.animation = `typing 1s ease-in-out ${index * 0.2}s forwards`;
+            });
+        });
+    </script>
+</body>
+</html>

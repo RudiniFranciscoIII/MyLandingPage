@@ -1,0 +1,36 @@
+/* script.css */
+
+body {
+    margin: 0; /* Remove default body margin */
+    background: linear-gradient(180deg, #000000, #0000ff); /* Black to Blue gradient */
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    font-size: 4em;
+    color: #000000; /* Default color */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff6347; /* Glowing effect */
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
