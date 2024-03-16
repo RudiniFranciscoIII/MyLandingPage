@@ -19,5 +19,5 @@ document.getElementById('act5').addEventListener('click', function() {
 });
 
 document.getElementById('animationProject').addEventListener('click', function() {
-    window.location.href = './Animation Project/index.html';
+    window.location.href = 'Animation Project/index.html';
 });
