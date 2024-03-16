@@ -6,7 +6,7 @@
 
   body{
     position: relative;
-    height: auto;
+    height: 100vh auto;
     width: 100%;
     max-height: auto;
     background: linear-gradient(165deg, rgb(0, 2, 122) 25%, rgb(23, 104, 255));
