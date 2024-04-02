@@ -3,7 +3,7 @@ document.getElementById('act1').addEventListener('click', function() {
 });
 
 document.getElementById('act2').addEventListener('click', function() {
-    window.location.href = 'Bouncing Text/index.html';
+    window.location.href = 'BouncingText/index.html';
 });
 
 document.getElementById('act3').addEventListener('click', function() {
