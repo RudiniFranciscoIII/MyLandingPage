@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Form Data</title>
+</head>
+<body>
+    <h2>Form Data</h2>
+    <div id="formData"></div>
+
+    <script>
+        // Retrieve stored data from local storage
+        var loginUserId = localStorage.getItem('loginUserId');
+        var loginPassword = localStorage.getItem('loginPassword');
+        var rememberPassword = localStorage.getItem('rememberPassword');
+        var signupUserId = localStorage.getItem('signupUserId');
+        var signupEmail = localStorage.getItem('signupEmail');
+        var signupPassword = localStorage.getItem('signupPassword');
+        var agreeTerms = localStorage.getItem('agreeTerms');
+
+        // Display the stored data
+        var formDataDiv = document.getElementById('formData');
+        formDataDiv.innerHTML = `
+            <p><strong>Login Form Data:</strong></p>
+            <p>User Id: ${loginUserId}</p>
+            <p>Password: ${loginPassword}</p>
+            <p>Remember Password: ${rememberPassword}</p>
+            <hr>
+            <p><strong>Signup Form Data:</strong></p>
+            <p>User Id: ${signupUserId}</p>
+            <p>Email: ${signupEmail}</p>
+            <p>Password: ${signupPassword}</p>
+            <p>Agree Terms: ${agreeTerms}</p>
+        `;
+    </script>
+</body>
+</html>
